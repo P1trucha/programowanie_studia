@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Kalkulator objętości Figury</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="" method="post" id="theForm">
+        <fieldset>
+            <p>Obliczanie Objętości figury</p>
+            <div><label for="a">Parametr A </label><input type="number" name="a" id="a" required></div>
+            <div><label for="b">Parametr B</label><input type="number" name="b" id="b" required></div>
+            <div><label for="h">Wysokość H</label><input type="number" name="h" id="h" required></div>
+            <div><label for="summary">Dział</label>
+                <select name="summary" id="summary">
+                    <option value="prostopadloscian">Prostopadłościan</option>
+                    <option value="romb">Romb</option>
+                </select>
+            </div>
+            <div><input type="submit" value="Oblicz" id="submit"></div>
+            <div id="sumaryarray"></div> <!-- Wyświetlanie wybranego działu -->
+            <div id="volume">Twój wynik</div> <!-- Wyświetlanie objętości -->
+        </fieldset>
+    </form>
+    <script src="sphere.js"></script> <!-- Ścieżka do pliku JS -->
+</body>
+</html>
